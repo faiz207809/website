@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="daftar.html">Daftar</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+    </ul>
+    <form action="biodata.html">
+        <fieldset style="margin-left: 35%; margin-right: 35%; margin-top: 15%; background-color: gray;">
+            <h1 style="text-align: center;">Daftar</h1>
+            <div style="text-align: center;">
+                <label style="margin-left: -1%;">Username:</label>
+                <input type="text"><br>
+                <label>Password:</label>
+                <input type="password"><br>
+                <label style="margin-left: 8%;">Nama:</label>
+                <input type="text"><br>
+                <label style="margin-left: -23%;">Tanggal Lahir:</label>
+                <input type="date"><br>
+                <label for="Jurusan" style="margin-left: -63px;">Jurusan:</label>
+                <select name="Jurusan" id="Jurusan">
+                    <option selected>Pilih Jurusan</option>
+                    <option value="PPLG">PPLG</option>
+                    <option value="TJKT">TJKT</option>
+                    <option value="ELEKTRO">ELEKTRO</option>
+                    <option value="DPIB">DPIB</option>
+                    <option value="TOI">TOI</option>
+                    <option value="TITL">TITL</option>
+                    <option value="TPM">TPM</option>
+                    <option value="TKRO">TKRO</option>
+                </select><br>
+                <label style="margin-left: 24px;">Alamat:</label>
+                <textarea></textarea><br>
+                <button type="submit">Daftar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
